@@ -13,15 +13,31 @@ const letters = {
 
 
 1: `
-My love,
+My dearest C,
 
-This is where your Day 1 letter goes.
+Innu thott nte trip start cheyyanallo,
+so i thought if enik nte kutty kk proper ayy
+message ayakaan pattillengi athin compensate cheyyaan
+ndelum onn vende. Athond njaan decide cheythatha
+12 days 12 letters for my gorgeous girl😌❤️.
 
-Write anything you want here.
+Inn njan full train ll avum, aellarum oppam erikal avumbo
+enik voice ayakaan patillelum text cheyyyan nokandutto..
+Eni eppo No phone nn ulla rule okke kond varo avoo🧑🏻‍🦯
+Ravile ayachallum elleum.. Night njammak call cheyyaam
+motham story um alkare pattiyum njan paranj tharaam. Insha allah
+and enik ante avde ulla kathakalum paranj tharane 
+kedakunnathinu mumb...
+Trip nte edell annelu orikalum eyy enik oru disturbance 
+avillaa ttoodaa.. So ninte manasilum anganathe thoughts
+kond varallee.. Class erikumbo okkee enik msg ayachoo..
+pattunna pole reply tharaam.. 
 
-You can make multiple paragraphs.
+Ith oru introduction pole kanda mathiyee😅 njaan erunn next
+11 letters ndhaa aezuthande enik areela😂
 
-❤️
+
+With Love, Your chekkaan❤️
 `,
 
 
