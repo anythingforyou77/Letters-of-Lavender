@@ -518,3 +518,70 @@ document.body.appendChild(petal);
 
 
 createPetals();
+
+.wax-seal {
+
+
+width:55px;
+
+height:55px;
+
+
+background:#d85b83;
+
+
+border-radius:50%;
+
+
+display:flex;
+
+align-items:center;
+
+justify-content:center;
+
+
+color:white;
+
+
+margin:-20px auto 20px;
+
+
+font-size:25px;
+
+
+box-shadow:
+
+0 5px 15px rgba(0,0,0,.2);
+
+
+animation:
+
+sealPop .8s ease;
+
+}
+
+
+
+@keyframes sealPop {
+
+
+from{
+
+transform:
+
+scale(0)
+rotate(180deg);
+
+}
+
+
+to{
+
+transform:
+
+scale(1)
+rotate(0);
+
+}
+
+}
