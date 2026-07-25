@@ -312,67 +312,34 @@ header p {
   padding:20px;
 
 }
+#letterText {
 
 
+font-family:
 
-.letter-box {
-
-  background:
-
-  linear-gradient(
-    135deg,
-    #fffdf7,
-    #fff2f7
-  );
-
-  width:100%;
-
-  max-width:420px;
-
-  min-height:450px;
-
-  padding:35px;
-
-  border-radius:25px;
-
-  box-shadow:
-  0 20px 60px
-  rgba(0,0,0,.25);
+"Dancing Script",
+cursive;
 
 
-  text-align:center;
+font-size:24px;
 
-  animation:
 
-  openLetter .8s ease;
+line-height:1.8;
+
+
+color:#5b405f;
+
+
+text-align:left;
+
+
+white-space:pre-line;
+
 
 }
 
 
 
-@keyframes openLetter {
-
-  from {
-
-    transform:
-    translateY(80px)
-    scale(.7);
-
-    opacity:0;
-
-  }
-
-  to {
-
-    transform:
-    translateY(0)
-    scale(1);
-
-    opacity:1;
-
-  }
-
-}
 
 
 
