@@ -343,6 +343,7 @@ white-space:pre-line;
 
 
 
+
 .open-envelope {
 
   font-size:70px;
@@ -427,3 +428,93 @@ white-space:pre-line;
   }
 
 }
+.petal {
+
+
+position:fixed;
+
+
+top:-20px;
+
+
+font-size:25px;
+
+
+animation:
+
+fall 10s linear infinite;
+
+
+pointer-events:none;
+
+
+z-index:10;
+
+
+}
+
+
+@keyframes fall {
+
+
+0% {
+
+transform:
+
+translateY(-10vh)
+rotate(0deg);
+
+opacity:1;
+
+}
+
+
+100% {
+
+transform:
+
+translateY(110vh)
+rotate(360deg);
+
+opacity:0;
+
+}
+
+}
+function createPetals(){
+
+
+for(let i=0;i<25;i++){
+
+
+let petal=document.createElement("div");
+
+
+petal.className="petal";
+
+
+petal.innerHTML="🌸";
+
+
+petal.style.left=
+Math.random()*100+"%";
+
+
+petal.style.animationDelay=
+Math.random()*10+"s";
+
+
+petal.style.fontSize=
+(15+Math.random()*25)+"px";
+
+
+document.body.appendChild(petal);
+
+
+}
+
+
+}
+
+
+createPetals();
