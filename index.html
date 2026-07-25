@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Letters of Lavender 💜</title>
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div id="intro">
+  <div class="intro-envelope">
+    💌
+  </div>
+  <h2>A letter has arrived for you 💜</h2>
+  <button onclick="enterSite()">Open</button>
+</div>
+
+
+<div id="main" class="hidden">
+
+  <header>
+    <h1>Letters of Lavender</h1>
+    <p id="welcome">
+      A little piece of my heart, waiting for you.
+    </p>
+  </header>
+
+
+  <section class="envelope-grid">
+
+    <div class="envelope locked" data-day="1">
+      <span>💌</span>
+      <small>Day 1</small>
+    </div>
+
+    <div class="envelope locked" data-day="2">
+      <span>💌</span>
+      <small>Day 2</small>
+    </div>
+
+    <div class="envelope locked" data-day="3">
+      <span>💌</span>
+      <small>Day 3</small>
+    </div>
+
+    <div class="envelope locked" data-day="4">
+      <span>💌</span>
+      <small>Day 4</small>
+    </div>
+
+    <div class="envelope locked" data-day="5">
+      <span>💌</span>
+      <small>Day 5</small>
+    </div>
+
+    <div class="envelope locked" data-day="6">
+      <span>💌</span>
+      <small>Day 6</small>
+    </div>
+
+    <div class="envelope locked" data-day="7">
+      <span>💌</span>
+      <small>Day 7</small>
+    </div>
+
+    <div class="envelope locked" data-day="8">
+      <span>💌</span>
+      <small>Day 8</small>
+    </div>
+
+    <div class="envelope locked" data-day="9">
+      <span>💌</span>
+      <small>Day 9</small>
+    </div>
+
+    <div class="envelope locked" data-day="10">
+      <span>💌</span>
+      <small>Day 10</small>
+    </div>
+
+    <div class="envelope locked" data-day="11">
+      <span>💌</span>
+      <small>Day 11</small>
+    </div>
+
+    <div class="envelope locked" data-day="12">
+      <span>💌</span>
+      <small>Day 12</small>
+    </div>
+
+  </section>
+
+</div>
+
+
+<div id="letterModal" class="hidden">
+
+  <div class="letter-box">
+
+    <div class="open-envelope">
+      💌
+    </div>
+
+    <h2 id="letterTitle"></h2>
+
+    <div id="letterText"></div>
+
+    <div id="countdown"></div>
+
+    <button onclick="closeLetter()">
+      Close
+    </button>
+
+  </div>
+
+</div>
+
+
+<script src="letters.js"></script>
+<script src="script.js"></script>
+
+</body>
+</html>
