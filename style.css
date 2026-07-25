@@ -1,0 +1,461 @@
+/* =========================
+   LETTERS OF LAVENDER
+   Main Design
+========================= */
+
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600&family=Poppins:wght@300;400;500&display=swap');
+
+
+:root {
+  --lavender: #e8d9ff;
+  --deep-lavender: #8e6bbf;
+  --pink: #f8b6c8;
+  --paper: #fffaf2;
+  --text: #4d3b55;
+  --shadow: rgba(80, 40, 100, 0.25);
+}
+
+
+* {
+  box-sizing: border-box;
+}
+
+
+body {
+  margin: 0;
+  min-height: 100vh;
+
+  font-family: "Poppins", sans-serif;
+  color: var(--text);
+
+  background:
+    linear-gradient(
+      135deg,
+      #d9c7ff,
+      #f8d9eb,
+      #eadcff
+    );
+
+  overflow-x: hidden;
+}
+
+
+/* Floating background petals */
+
+body::before {
+  content: "🌸  ✿  🌸  ✿  🌸  ✿";
+  position: fixed;
+
+  top: 0;
+  left: 0;
+
+  width: 100%;
+  height: 100%;
+
+  font-size: 35px;
+  letter-spacing: 80px;
+
+  opacity: 0.18;
+
+  animation: petals 20s linear infinite;
+
+  pointer-events: none;
+}
+
+
+@keyframes petals {
+
+  from {
+    transform: translateY(-50px);
+  }
+
+  to {
+    transform: translateY(100vh);
+  }
+
+}
+
+
+
+/* Intro */
+
+#intro {
+
+  height:100vh;
+
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  align-items:center;
+
+  text-align:center;
+
+}
+
+
+.intro-envelope {
+
+  font-size:90px;
+
+  animation:
+  float 3s ease-in-out infinite;
+
+}
+
+
+@keyframes float {
+
+  50% {
+    transform:translateY(-20px);
+  }
+
+}
+
+
+
+button {
+
+  border:none;
+
+  padding:12px 30px;
+
+  border-radius:30px;
+
+  background:
+  linear-gradient(
+    135deg,
+    #d99bb5,
+    #9d7bd4
+  );
+
+  color:white;
+
+  font-size:16px;
+
+  cursor:pointer;
+
+  box-shadow:0 8px 20px var(--shadow);
+
+}
+
+
+
+button:hover {
+
+  transform:scale(1.05);
+
+}
+
+
+
+/* Main */
+
+.hidden {
+
+  display:none !important;
+
+}
+
+
+
+header {
+
+  text-align:center;
+
+  padding:40px 20px 20px;
+
+}
+
+
+
+header h1 {
+
+  font-family:
+  "Cormorant Garamond",
+  serif;
+
+  font-size:45px;
+
+  margin-bottom:5px;
+
+}
+
+
+
+header p {
+
+  opacity:.8;
+
+}
+
+
+
+/* Envelope grid */
+
+
+.envelope-grid {
+
+  display:grid;
+
+  grid-template-columns:
+  repeat(3,1fr);
+
+  gap:20px;
+
+  padding:30px;
+
+  max-width:500px;
+
+  margin:auto;
+
+}
+
+
+
+.envelope {
+
+  height:120px;
+
+  border-radius:18px;
+
+  background:
+
+  linear-gradient(
+    145deg,
+    #fff,
+    #ffd8e5
+  );
+
+  display:flex;
+
+  flex-direction:column;
+
+  justify-content:center;
+
+  align-items:center;
+
+  cursor:pointer;
+
+  box-shadow:
+
+  0 10px 25px
+  var(--shadow);
+
+
+  transition:.4s;
+
+}
+
+
+
+.envelope span {
+
+  font-size:45px;
+
+}
+
+
+
+.envelope small {
+
+  margin-top:8px;
+
+  font-weight:500;
+
+}
+
+
+
+.envelope:hover {
+
+  transform:
+  translateY(-8px)
+  rotate(-2deg);
+
+}
+
+
+
+.locked {
+
+  filter:
+  grayscale(.4);
+
+  opacity:.65;
+
+}
+
+
+
+/* Letter modal */
+
+
+#letterModal {
+
+  position:fixed;
+
+  inset:0;
+
+  background:
+  rgba(80,50,100,.35);
+
+  backdrop-filter:
+  blur(8px);
+
+  display:flex;
+
+  justify-content:center;
+
+  align-items:center;
+
+  padding:20px;
+
+}
+
+
+
+.letter-box {
+
+  background:
+
+  linear-gradient(
+    135deg,
+    #fffdf7,
+    #fff2f7
+  );
+
+  width:100%;
+
+  max-width:420px;
+
+  min-height:450px;
+
+  padding:35px;
+
+  border-radius:25px;
+
+  box-shadow:
+  0 20px 60px
+  rgba(0,0,0,.25);
+
+
+  text-align:center;
+
+  animation:
+
+  openLetter .8s ease;
+
+}
+
+
+
+@keyframes openLetter {
+
+  from {
+
+    transform:
+    translateY(80px)
+    scale(.7);
+
+    opacity:0;
+
+  }
+
+  to {
+
+    transform:
+    translateY(0)
+    scale(1);
+
+    opacity:1;
+
+  }
+
+}
+
+
+
+.open-envelope {
+
+  font-size:70px;
+
+  animation:
+  envelopeOpen 1.5s;
+
+}
+
+
+@keyframes envelopeOpen {
+
+  50% {
+
+    transform:
+    rotateX(180deg);
+
+  }
+
+}
+
+
+
+#letterText {
+
+  text-align:left;
+
+  line-height:1.8;
+
+  margin-top:25px;
+
+  white-space:pre-line;
+
+}
+
+
+
+#countdown {
+
+  margin-top:30px;
+
+  color:
+  var(--deep-lavender);
+
+  font-weight:500;
+
+}
+
+
+
+/* Mobile */
+
+@media(max-width:500px){
+
+  .envelope-grid {
+
+    gap:15px;
+
+    padding:20px;
+
+  }
+
+
+  .envelope {
+
+    height:100px;
+
+  }
+
+
+  .envelope span {
+
+    font-size:38px;
+
+  }
+
+
+  header h1 {
+
+    font-size:38px;
+
+  }
+
+}
